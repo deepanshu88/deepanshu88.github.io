@@ -496,6 +496,10 @@ section.skill {padding-top:7rem}
         padding: 10rem 3% 2rem;
     }
 
+    section.home, section.skill {
+        padding: 10rem 9% 2rem;
+    }
+
     .services {
         padding-bottom: 7rem;
     }
@@ -514,6 +518,11 @@ section.skill {padding-top:7rem}
 }
 
 @media (max-width: 768px) {
+
+    .box {
+        width: 100%;
+    }
+
     #menu-icon {
         display: block;
     }
