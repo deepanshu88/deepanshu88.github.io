@@ -136,35 +136,25 @@ span {
 } 
 
 /* Column width for large screens */
-.col-lg-8 {
+.skillBox {
     width: 50%; /* 8 columns out of 12 */
     float: left; /* Ensures that columns sit side by side */
     /* Adjust padding, margin, and other styles as needed */
 }
 
-/* Column offset for large screens */
-.col-lg-offset-2 {
-    margin-left: 16.66666667%; /* 2 columns out of 12 */
-    /* Adjust margin and other styles as needed */
-}
-
 /* Media Query for Medium devices */
 @media (max-width: 991.98px) {
-    .col-lg-8 {
+    .skillBox {
         width: 100%; /* Take full width */
         margin-left: 0; /* Remove any offset */
         /* Adjust padding, margin, and other styles as needed */
     }
 
-    .col-lg-offset-2 {
-        margin-left: 0; /* No offset for medium screens */
-        /* Adjust margin and other styles as needed */
-    }
 }
 
 /* Media Query for Small devices */
 @media (max-width: 767.98px) {
-    .col-lg-8,
+    .skillBox,
     .col-lg-offset-2 {
         width: 100%; /* Take full width */
         margin-left: 0; /* Remove any offset */
@@ -172,7 +162,7 @@ span {
     }
 }
 
-.text-left {
+.tl{
     text-align: left;
 }
 .clearfix::after {
@@ -189,11 +179,11 @@ span {
     text-align: center;
 }
 
-.skill .large-size {
+.skill .tl {
     font-size: 18px;
 }
 
-.skillbar-container {
+.bars {
     position:relative;
     display:block;
     margin-bottom: 15px;   
@@ -249,7 +239,6 @@ span {
     box-shadow: none;
 }
 
-section.skill {padding-top:7rem}
 .skill {
     display: flex;
     justify-content: center;
@@ -261,23 +250,9 @@ section.skill {padding-top:7rem}
     width: 35vw;
 }
 
-.heading {
+section h2 {
     text-align: center;
     font-size: 4.5rem;
-}
-
-.skill-content h2 {
-    text-align: left;
-    line-height: 1.2;
-}
-
-.skill-content .db {
-    font-size: 2.6rem;
-}
-
-.skill-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
 }
 
 .services h2 {
@@ -325,7 +300,7 @@ section.skill {padding-top:7rem}
     background: var(--second-bg-color);
 }
 
-.project h2 {
+.project h2 , .skill h2{
     margin-bottom: 4rem;
 }
 

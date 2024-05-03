@@ -36,32 +36,15 @@ window.onscroll = () => {
 };
 
 
-function toggleExtra() {
-  var extraText = document.getElementById("extra-text");
-  var btn = document.getElementById("toggle-btn");
-  if (extraText.style.display === "none") {
-    extraText.style.display = "inline";
-    btn.innerHTML = "Show Less";
-  } else {
-    extraText.style.display = "none";
-    btn.innerHTML = "Read More";
-  }
-}
-
-
-
 ScrollReveal({ 
     distance: '80px',
     duration: 2000,
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p1, .about-content', { origin: 'right' });
-
-
+ScrollReveal().reveal('.home-content, section h2', { origin: 'top' });
+ScrollReveal().reveal('.services-container, .project-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
 
 const typed = new Typed('.multiple-text', {
     strings: ['Data Scientist'],
@@ -75,13 +58,13 @@ var isAnimated = false;
 
 window.onscroll = function() {
     if (!isAnimated) { 
-        var skillBarWrapper = document.getElementById('skill-bar-wrapper');
+        var skillBarWrapper = document.getElementById('skill-section');
         var hT = skillBarWrapper.offsetTop;
         var hH = skillBarWrapper.offsetHeight;
         var wH = window.innerHeight;
         var wS = window.pageYOffset || document.documentElement.scrollTop;
         if (wS > (hT+hH-1.4*wH)){
-            var skillbarContainers = document.querySelectorAll('.skillbar-container');
+            var skillbarContainers = document.querySelectorAll('.bars');
             skillbarContainers.forEach(function(skillbarContainer) {
                 var skills = skillbarContainer.querySelector('.skills');
                 var width = parseInt(skillbarContainer.getAttribute('data-percent')); 
