@@ -1,1 +1,1 @@
-Check out [Demo](https://deepanshu88.github.io/portfolio/)
+Check out [Demo](https://deepanshu88.github.io/)
